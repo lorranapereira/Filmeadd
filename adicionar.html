@@ -1,0 +1,86 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>PlayFilmes</title>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Rubik:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>PlayFilmes</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <h1 class="title-menu">PlayFilmes </h1>
+        <a class="nav-link" href="index.html">Filmes</a>
+        <a class="nav-link" href="/filme/adicionar">Adicionar filme</a>
+    </nav>
+
+
+    <div class="container">
+        <h1 class="title">Adicionar Filmes</h1>
+        <br />
+        <form action="#" id="form" class="form-control form" enctype="multipart/form-data" method="post">
+            <div class="form-group">
+                <label>Título</label>
+                <input type="text" class="form-control" id="title" placeholder="Digite o título">
+            </div>
+            <div class="form-group" id="gender">
+                <label>Gêneros</label><br>
+                <label for="">Ação</label>
+                <input value="Ação" id="checkbox" type="checkbox"><br />
+                <label for="">Aventura</label>
+                <input value="Aventura" id="checkbox" type="checkbox"><br />
+                <label for="">Comédia</label>
+                <input value="Comédia" id="checkbox" type="checkbox"><br />
+                <label for="">Documentário</label>
+                <input value="Documentário" id="checkbox" type="checkbox"><br />
+                <label for="">Ficção científica</label>
+                <input value="Ficção científica" id="checkbox" type="checkbox"><br />
+                <label for="">Romance</label>
+                <input value="Romance" id="checkbox" type="checkbox"><br />
+                <label for="">Suspense</label>
+                <input value="Suspense" id="checkbox" type="checkbox"><br />
+                <label for="">Terror</label>
+                <input value="Terror" id="checkbox" type="checkbox"><br />
+            </div>
+            <div class="form-group">
+                <label>Sinopse</label>
+                <textarea id="synopsis" class="form-control" cols="30" rows="10"
+                    placeholder="Digite a sinopse"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Faixa etária</label>
+                <select id="ageRange" class="form-control">
+                    <option value="L">L</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option value="14">14</option>
+                    <option value="16">16</option>
+                    <option value="18">18</option>
+                </select>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Adicionar">
+        </form>
+    </div>
+    <footer class="page-footer font-small blue pt-4">
+        <p class="text-center  text-white">Email: PlayFilmes@net.com <br /></p>
+        <p class="text-center text-white">Telefone: (53) 00000-00000 <br /></p>
+        <br />
+        <!-- /.container -->
+    </footer>
+    <script src="js/filmController.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
